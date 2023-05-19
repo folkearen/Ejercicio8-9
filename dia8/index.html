@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/style/style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Registro de OSDeDA </h2>
+            <p>Obra Social De Desarrolladores</p>
+            <a class="phone" href="tel:9703726385"><span>Tel: </span>9703726385</a>
+            <a class="email" href="mailto:contacto@osdeda.com"><span>Email: </span>contacto@osdeda.com</a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211213.27663653408!2d-118.73131070605672!3d34.19217569658644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e8285940dba09f%3A0xbba0d7a06bdd69d6!2sAmerican%20Jewish%20University-Brandeis%20Bardin%20Campus!5e0!3m2!1ses!2scl!4v1684330938824!5m2!1ses!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <form action="">
+            <fieldset class="datos__inscripcion">
+                <legend>Datos de registro</legend>
+                <label for="name">Nombre Completo <span> *</span></label>
+                <input type="text" name="name" id="name" placeholder="Ej: Rosa Clavel Flores del Campo" required>
+                <label for="email">Correo Electrónico<span> *</span></label>
+                <input type="email" name="email" id="email" placeholder="Ej: example@domain.com" required>
+                <label for="telefono">Telefono<span> *</span></label>
+                <input type="number" name="telefono" id="telefono" placeholder="Ej: 555-555-3234" required>
+                <label for="mensaje">Comentarios</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="4" placeholder="Escriba su comentario aquí"></textarea>
+                <p><span>* </span>Datos obligatirios</p>
+             </fieldset>
+             <fieldset class="donaciones">
+                <legend>Donaciones Monetarias</legend>
+                <div>
+                    <label for="$5USD">$5USD</label>
+                    <input type="radio" name="Donaciones" id="$5USD" value="5">
+                </div>
+                <div>
+                    <label for="$10USD">$10USD</label>
+                    <input type="radio" name="Donaciones" id="$10USD" value="10">
+                </div>
+                <div> 
+                    <label for="$15USD">$15USD</label>
+                    <input type="radio" name="Donaciones" id="$15USD" value="15">
+                </div>
+             </fieldset>
+             <fieldset class="cooperaciones">
+                <legend>Colaboraciones</legend>
+                <div>
+                    <input type="checkbox" name="eventos" id="eventos" value="eventos">
+                    <label for="eventos">Cooperar como personal en eventos.</label> 
+                </div>
+                <div>
+                    <input type="checkbox" name="transporte" id="transporte" value="transporte">
+                    <label for="transporte">Cooperar con transporte para el personal o implementos.</label> 
+                </div>
+             </fieldset>
+             <fieldset class="participacion">
+                <legend>Haz participado con nosotros</legend>
+                <select name="participación" id="participacion">
+                    <option value="nunca">Nunca</option>
+                    <option value="una">Una vez</option>
+                    <option value="varias">Más de una vez</option>
+                </select>
+             </fieldset>
+             <button type="submit">Enviar</button>
+        </form>
+    </main>
+</html>

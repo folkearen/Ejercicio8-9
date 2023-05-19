@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: #F5F0BB;
+    display: flex;
+    justify-content: center; 
+    min-height: 100vh;
+    padding: 2rem 5rem;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 3rem;
+    padding-right:3rem;
+    width: 40%;
+}
+section p{
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+section a {
+    color: #73A9AD;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+.phone {
+    width: 40%;
+}
+.email{
+    width: 57%;
+}
+section a:hover {
+    border-bottom: solid 0.2rem orange;
+}
+iframe {
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+fieldset {
+    background-color: #DBDFAA;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    margin-top: 0.5rem;
+}
+legend {
+    background-color: #73A9AD;
+    border-radius: 1rem;
+    color: azure;
+    font-weight: bold;
+    padding-left: 3rem;
+    width: 50%;
+}
+.datos__inscripcion label {
+    margin-bottom: 0.2rem;
+}
+.datos__inscripcion span {
+    color: red;
+    font-size: 0.6rem;
+}
+.datos__inscripcion input {
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 0.6rem;
+}
+.datos__inscripcion textarea {
+    border: none;
+    border-radius: 0.5rem;
+}
+.datos__inscripcion p{
+    font-size: 0.6rem;
+    margin-top: 0.2rem;
+}
+.datos__inscripcion input::placeholder,.datos__inscripcion textarea::placeholder  {
+    color: #73A9AD;
+    padding: 0 1.5rem;
+}
+.donaciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.donaciones div label {
+    margin-right: 0.5rem;
+} 
+.cooperaciones {
+    display: flex;
+    
+    justify-content: space-around;
+}
+.participacion legend {
+    width: 70%;
+}
+
+button {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #73A9AD;
+    color: azure;
+    font-size: bold;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    width: 40%;
+}
+button:hover {
+    cursor: pointer;
+}
+
+
+/* Estilos para tablet Tablet de 425px hasta 768px*/
+@media only screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse ;
+  }
+
+}
+
+/* Estilos para móvil Desde 320px hasta 425px */
+@media only screen and (max-width: 425px) {
+    main {
+        align-items: center;
+        flex-direction: column;
+        background-color: aqua;
+       
+    }
+    form {
+        width: 100%;
+    }
+    fieldset {
+        border: none;
+        padding: 2rem;
+        background-color:floralwhite;
+    }
+    legend{
+        background-color: transparent;
+        color: black;
+        font-size: 0.8rem;
+        padding: 0;
+        width: 100%;
+    }
+    section {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+    
+
+
+  
+  
